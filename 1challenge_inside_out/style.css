@@ -1,0 +1,191 @@
+body {
+    font-size: 13px;
+}
+
+.container-stones{
+	background-image: url('images/stones.jpg'); 
+	/*opacity: 0.25;	*/
+    height: au;
+    padding-left: 6%;
+    padding-right: 6%;
+    position: relative;
+    z-index: 1;
+}
+
+
+.container-black {
+	background-color: black;
+	/* rounded corners */
+	border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding-right: 5%;
+    position: relative;
+    z-index: 2;
+}
+#menu {
+    cursor: pointer;
+    width: 28px;
+    padding-top: 10px;
+    padding-left: 19px;
+}
+
+#menu-items {
+    padding-left: 0;
+    margin-left: 21px;
+    margin-top: 2px;
+    border: 1px solid white;
+    background-color: white;
+    position: absolute;
+}
+
+#menu-items a {
+    display: block;
+    border: 1px solid white;
+    border-radius: 6px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#menu-items a:hover {
+    background-color: white;
+    color: #585858;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+#menu-items span {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.logo {
+    float: right;
+    padding-top: 36px;
+    width: 324px;
+    transform: rotate(18deg);
+}
+
+.black-image {
+	/* display image in the center*/
+	margin:auto;
+	display: block;
+}
+
+.trailer {
+    outline: thick solid white;  /*Use https://css-tricks.com/snippets/css/multiple-borders/*/
+    width: 480px;
+    height: 321px;
+    background-color: black;
+    display: block;
+    margin: auto;
+    border: 1px solid #8c8282;
+    position: relative;
+    z-index: 4;
+}
+
+.container-yellow{
+    text-align: center;
+	background-color: #FFEA05;
+    height: auto;
+    margin: auto;
+    margin-top: -24px;
+    width: 80%;
+    position: relative;
+    z-index: 3;
+}
+
+
+.trailer img {
+    width: 100%;
+    opacity: 0.25;
+}
+
+.trailer .player{
+    width: 95px;
+    height: 95px;
+    position: relative;
+    margin: auto;
+    margin-top: -205px;
+    opacity: 1;
+}
+.text-trailer {
+    color: white;
+    text-align: center;
+    margin-top: -110px;
+}
+
+.presentation {
+    color: dimgray;
+    width: 70%;
+    margin: auto;
+    padding: 25px;
+    font-weight: 500;
+}
+
+
+section {
+    display: flex;
+    padding: 30px;
+}
+
+#fear {
+    background-color: #C888D2;
+}
+
+#anger {
+    background-color: : #E58384;
+}
+
+#disgust {
+    background-color: #80D280;
+}
+
+.sadness {
+    background-color: #7F99BE;
+}
+#fear img{
+    width: 125px;
+    height: 200px;
+}
+
+#disgust img{
+    width: 125px;
+    height: 200px;
+}
+#anger img {
+    width: 125px;
+    height: 150px;
+}
+
+#sadness img {
+    width: 125px;
+    height: 170px;
+}
+
+.character-description-gray{
+    width: 70%;
+    padding: 35px;
+    color: dimgray;
+}
+
+.character-description-white{
+    width: 70%;
+    padding: 35px;
+    color: ghostwhite;
+}
+
+.title {
+    color: white;
+    text-align: left;
+    font-size: 50px;
+    font-weight: 700;
+}

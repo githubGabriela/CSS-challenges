@@ -1,0 +1,86 @@
+<html>
+<head>
+	<title>Day 1</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body >
+	<div class="container-stones">
+		<div class="container-black">
+			<img id="menu" src="images/menu.png">
+			<div id="menu-items" >
+				<a href="#joy" /> <span> JOY </span>
+				<a href="#fear" /><span> FEAR </span>
+				<a href="#anger" /><span> ANGER </span>
+				<a href="#disgust" /><span> DISGUST </span>
+				<a href="#sadness" /><span> SADNESS </span>
+			</div>
+			<img class="logo" src="images/logo.png">
+			<img class="black-image" src="images/black_picture.PNG">
+		</div>
+		<div class="container-yellow">
+			<div class="trailer">
+				<img src="images/inside.jpg">
+				<img class="player" src="images/player.png">
+				<h2 class="text-trailer">Watch trailer</h2>
+			</div>
+			<p class="presentation">Growing up can be a bumpy road, and it's no exception for Riley, who is uprooted from her Midwest life when her father starts a new job in San Francisco. Like all of us, Riley is guided by her emotions – Joy (Amy Poehler), Fear (Bill Hader), Anger (Lewis Black), Disgust (Mindy Kaling) and Sadness (Phyllis Smith). The emotions live in Headquarters, the control center inside Riley’s mind, where they help advise her through everyday life in INSIDE OUT.</p>  
+
+
+			<section id="joy">
+				<img src="images/joy.png">
+				<div class="character-description-gray">
+				<div class="title"> JOY </div>
+				  <p>Joy's goal has always been to make sure Riley stays joyful. She is lighthearted, optimistic and determined to find the fun in every situation. Joy sees challenges in Riley's life as opportunities and the less happy moments as hiccups on the way back to something great. As long as Riley is happy, so is Joy</p>
+			    </div>
+			</section>
+
+			<section id="fear" >
+				<div class="character-description-white">
+				<div class="title"> FEAR </div>
+				  <p>Fear's main job is to protect Riley and keep her safe. He is constantly on the lookout for potential disasters and spends time evaluating the possible dangers, pitfalls, and risk involved in Riley's everyday activities. There are very few activities and events that Fear does not find to be dangerous and possibly fatal.</p>
+			    </div>
+				<img src="images/fear.png">
+			</section>
+
+			<section id="anger">
+				<img src="images/anger.png">
+				<div class="character-description-white">
+				<div class="title"> ANGER </div>
+				  <p>Anger feels very passionately about making sure things are fair for Riley. He has a fiery spirit and tends to explode (literally) when things don’t go as planned. He is quick to overreact and has little patience for life’s imperfections</p>
+			    </div>
+			</section>
+
+			<section id="disgust">
+				<div class="character-description-gray">
+				<div class="title"> DISGUST </div>
+				  <p>Disgust is highly opinionated, extremely honest and prevents Riley from getting poisoned — both physically and socially. She keeps a careful eye on the people, places and things that Riley comes into contact with — whether that's broccoli or last year's fashion trend. Disgust always has the best of intentions and refuses to lower her standards.</p>
+			    </div>
+	    	<img src="images/disgust.png">
+			</section>
+
+			<section id="sadness">
+	    	<img src="images/sadness.png">
+	    	<div class="character-description-white">
+				<div class="title"> SADNESS </div>
+				  <p>None of the other Emotions really understand what Sadness' role is. Sadness would love to be more optimistic and helpful in keeping Riley happy, but she finds it so hard to be positive. Sometimes it seems like the best thing to do is just lie on the floor and have a good cry</p>
+			    </div>
+			</section>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+ var menu = document.getElementById("menu");
+ var menuItems = document.getElementById("menu-items");
+ menuItems.style.display = 'none';
+ 
+ menu.onclick = function() {
+      menuItems.style.display = menuItems.style.display === 'none' ? 'block' : 'none'; 
+  }
+
+  menuItems.onclick = function(){
+  	menuItems.style.display = 'none';
+  }
+</script>
+</html>
