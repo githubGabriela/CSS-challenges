@@ -1,0 +1,170 @@
+Center an element (div or image):
+  display block;
+  margin: auto;
+  
+Overlay divs:
+  position: relative;
+  z-index: 1; 
+  
+Add a beautiful white border for a player (that looks like a white shadow)
+  outline: thick solid white;
+
+Remove the space at the left between ul and li:
+  padding-left: 0;
+
+Remove the dots for li:
+  text-decoration: none;
+  list-style-type: none;
+	
+How to align 3 divs in left, center, right:  http://jsfiddle.net/66fCm/1/
+
+<div class="wrap">
+<div class="left">
+    left
+</div>
+<div class="right">
+    right
+</div>
+<div class="center">
+    center sdv dg sdb sdfbh sdfhfdhh h dfh
+</div>
+    </div>  
+.wrap{
+    text-align:center
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.center{
+text-align:left;
+    margin:0 auto; 
+   display:inline-block
+}
+
+
+Add a non-custom font to a CSS page:
+@font-face {
+ font-family: "Custom font";
+ src: url('fonts/Proximus-regular.tiff');
+}
+
+button {
+ font-family : "Custom font";
+}
+
+Reduce the distance between paragraphs:
+p {
+ margin : 0;
+ padding : 0;
+}
+ 
+<------------------->   Customize radio buttons:  <------------------->
+https://codepen.io/AngelaVelasquez/pen/Eypnq
+
+In HTML create ul with li. For every li add a div with class "check":
+				<ul>
+					<li>
+						<input type="radio" name="bullet" value="second">
+						<div class="check"></div>	
+					</li>
+					<li>
+						<input type="radio" name="bullet" value="third">
+						<div class="check"></div>	
+					</li>
+					<li>
+						<input type="radio" name="bullet" value="fourth">
+						<div class="check"></div>
+					</li>
+				</ul>
+
+In CSS hide the input type="radio"
+ul li input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+And style the .check divs:
+ul li .check{
+    border-radius: 50%;
+    background-color: lightgray;
+    border: 1px solid rgba(128, 128, 128, 0.27);
+    width: 12px;
+    height: 12px;
+    margin-top: 5px;
+}
+Remove the bullets for li items:
+ul li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+Display menu items in the middle of the screen:
+ul{
+	display: flex;
+    	justify-content: center;
+}
+
+Single web-app  Jump to sections:
+<a href="#test"> Go to Test</a>
+<section id="test">  Here are the test details </section>
+
+Select only the first element in a ul list:
+.menu ul li:nth-child(1) > .menu_link {
+	border:none
+}
+
+<div class="menu">
+	<ul>
+		<li><a href="#devenirMembre" class="menu_link">Devenir membre</a></li>
+		<li><a href="#echanger" class="menu_link">Echanger</a></li>
+	</ul>
+</div>
+
+
+Create box-shadow:
+	box-shadow: 0px 0px 15px 2px #9b9b9b;
+		   values for: X, Y, blur, spread.  Create the shadow here: http://www.debray-jerome.fr/outils/Generateur-de-box-shadow-css3.html
+
+
+
+<--------------   How to create responsive grids with flex: (see code 12_responsive_cards) ------------>
+HTML define divs:
+<div class="flex">
+		<div class="right_box hover background_light_gray">
+			<img src="images/1.jpg">
+			<div class="description">
+				<p class="gray">Showtime! </p>
+			</div>
+		</div>
+</div>
+
+In CSS use flex, flex-wrap & @media.  Flex wrap will adapt the number of cards depending on the size of the screen.
+width must be defined for every div.
+img{
+	width: 100%;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.right_box{
+	width: 23%;
+	margin: 10px;
+}
+
+@media only screen and (max-width: 700px){ // tablet screen
+	.right_box{ 
+		width: 46%;
+	 }
+}
+
+@media only screen and (max-width: 500px){ // mobile screen
+	.right_box{ 
+		width: 98%;
+	 }
+}
