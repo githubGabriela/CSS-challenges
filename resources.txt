@@ -1,22 +1,22 @@
-Center an element (div or image):
+<------------------->  Center an element (div or image) <-------------------> 
   display block;
   margin: auto;
   
-Overlay divs:
+<------------------->  Overlay divs <-------------------> 
   position: relative;
   z-index: 1; 
   
-Add a beautiful white border for a player (that looks like a white shadow)
+<------------------->  Add a beautiful white border for a player (that looks like a white shadow) <-------------------> 
   outline: thick solid white;
 
-Remove the space at the left between ul and li:
+<-------------------> Remove the space at the left between ul and li <-------------------> 
   padding-left: 0;
 
-Remove the dots for li:
+<-------------------> Remove the dots for li <-------------------> 
   text-decoration: none;
   list-style-type: none;
 	
-How to align 3 divs in left, center, right:  http://jsfiddle.net/66fCm/1/
+<-------------------> How to align 3 divs in left, center, right:  http://jsfiddle.net/66fCm/1/ <-------------------> 
 
 <div class="wrap">
 <div class="left">
@@ -45,7 +45,7 @@ text-align:left;
 }
 
 
-Add a non-custom font to a CSS page:
+<-------------------> Add a non-custom font to a CSS page <-------------------> 
 @font-face {
  font-family: "Custom font";
  src: url('fonts/Proximus-regular.tiff');
@@ -55,7 +55,7 @@ button {
  font-family : "Custom font";
 }
 
-Reduce the distance between paragraphs:
+<-------------------> Reduce the distance between paragraphs <-------------------> 
 p {
  margin : 0;
  padding : 0;
@@ -101,21 +101,18 @@ ul li{
     list-style-type: none;
 }
 
-Display menu items in the middle of the screen:
+<-------------------> Display menu items in the middle of the screen <-------------------> 
 ul{
 	display: flex;
     	justify-content: center;
 }
 
-Single web-app  Jump to sections:
+<-------------------> Single web-app  Jump to sections <-------------------> 
 <a href="#test"> Go to Test</a>
 <section id="test">  Here are the test details </section>
 
-Select only the first element in a ul list:
-.menu ul li:nth-child(1) > .menu_link {
-	border:none
-}
 
+<-------------------> Select only the first element in a ul list <-------------------> 
 <div class="menu">
 	<ul>
 		<li><a href="#devenirMembre" class="menu_link">Devenir membre</a></li>
@@ -123,14 +120,18 @@ Select only the first element in a ul list:
 	</ul>
 </div>
 
+.menu ul li:nth-child(1) > .menu_link {
+	border:none
+}
 
-Create box-shadow:
+
+<-------------------> Create box-shadow <-------------------> 
 	box-shadow: 0px 0px 15px 2px #9b9b9b;
-		   values for: X, Y, blur, spread.  Create the shadow here: http://www.debray-jerome.fr/outils/Generateur-de-box-shadow-css3.html
+		   values for: X, Y, blur, spread, color.  Create your shadow here: http://www.debray-jerome.fr/outils/Generateur-de-box-shadow-css3.html
 
 
 
-<--------------   How to create responsive grids with flex: (see code 12_responsive_cards) ------------>
+<------------------->  Create responsive grids with flex: (see code for "12_responsive_cards")< -------------------> 
 HTML define divs:
 <div class="flex">
 		<div class="right_box hover background_light_gray">
@@ -168,3 +169,5 @@ img{
 		width: 98%;
 	 }
 }
+
+<------------------->  <-------------------> 
