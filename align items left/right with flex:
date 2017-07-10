@@ -1,0 +1,23 @@
+
+align items left/right with flex:
+
+
+<div class="lol">
+  <button class="one">start</button>
+  <button class="two">end</button>
+</div>
+
+
+
+.lol {
+    display: flex;
+    justify-content: space-between;
+}
+
+.one {
+    align-items: flex-start;
+}
+
+.two {
+    align-items: flex-end;
+}
